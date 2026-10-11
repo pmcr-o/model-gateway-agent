@@ -1,0 +1,7 @@
+{
+  "provider": "example",
+  "model": "reasoner",
+  "channel": "ui",
+  "reasoningKind": "opaque",
+  "hiddenChainOfThoughtRequired": false
+}

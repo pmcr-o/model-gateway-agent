@@ -1,0 +1,7 @@
+{
+  "registered": true,
+  "agent": "model-exchange-agent",
+  "plugin": "model-gateway",
+  "description": "Normalize external or local model prompts and responses into provider-neutral PMCR-O model.request/model.response evidence envelopes.",
+  "skill": "normalize-exchange"
+}
