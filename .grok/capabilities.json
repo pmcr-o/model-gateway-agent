@@ -1,0 +1,21 @@
+{
+  "schema": "pmcro.capabilities/v1",
+  "agent": "model-gateway-agent",
+  "executionRule": "registered AND runtime-present AND authorized",
+  "manualParity": {
+    "required": true,
+    "rule": "agent and manual terminal use the same scripts with the same arguments, exit codes, and evidence"
+  },
+  "capabilities": [
+    {
+      "plugin": "model-gateway",
+      "skill": "local-orchestration-bridge",
+      "route": "@model-gateway-agent /model-gateway:local-orchestration-bridge"
+    },
+    {
+      "plugin": "model-gateway",
+      "skill": "normalize-exchange",
+      "route": "@model-gateway-agent /model-gateway:normalize-exchange"
+    }
+  ]
+}

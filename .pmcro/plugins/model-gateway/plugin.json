@@ -1,0 +1,8 @@
+{
+  "name": "model-gateway",
+  "version": "0.1.0",
+  "description": "model-gateway PMCR-O domain capabilities",
+  "skills": [
+    "./skills/"
+  ]
+}

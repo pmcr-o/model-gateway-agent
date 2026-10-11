@@ -1,0 +1,16 @@
+{
+  "name": "model-gateway-agent",
+  "owner": {
+    "name": "pmcr-o"
+  },
+  "metadata": {
+    "description": "Provider-neutral model exchange and local orchestration bridge domain."
+  },
+  "plugins": [
+    {
+      "name": "model-gateway",
+      "source": "./.pmcro/plugins/model-gateway",
+      "description": "model-gateway capabilities owned by model-gateway-agent"
+    }
+  ]
+}

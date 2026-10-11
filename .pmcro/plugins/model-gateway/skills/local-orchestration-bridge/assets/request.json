@@ -1,0 +1,7 @@
+{
+  "registered": true,
+  "agent": "local-model-bridge-agent",
+  "plugin": "model-gateway",
+  "description": "Bridge a normalized model response to an explicitly supplied loopback orchestration API. Dry-run by default; no credential discovery.",
+  "skill": "local-orchestration-bridge"
+}

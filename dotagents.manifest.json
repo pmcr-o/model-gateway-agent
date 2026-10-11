@@ -1,0 +1,16 @@
+{
+  "schema": "dotagents.manifest/v1",
+  "name": "model-gateway-agent",
+  "owner": "pmcr-o",
+  "description": "Provider-neutral model exchange and local orchestration bridge domain.",
+  "invocationField": "plugin",
+  "plugins": [
+    {
+      "name": "model-gateway",
+      "source": "./.pmcro/plugins/model-gateway",
+      "description": "model-gateway capabilities owned by model-gateway-agent"
+    }
+  ],
+  "canonical": ".pmcro",
+  "projection": ".agents"
+}

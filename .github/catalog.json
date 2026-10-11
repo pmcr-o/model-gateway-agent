@@ -1,0 +1,18 @@
+{
+  "apiVersion": "pmcro.dev/v1",
+  "kind": "agent.catalog",
+  "id": "model-gateway-agent",
+  "authority": "read-only discovery; execution requires route + grant + runtime",
+  "skills": [
+    {
+      "id": "local-orchestration-bridge",
+      "plugin": "model-gateway",
+      "description": "Bridge a normalized model response to an explicitly supplied loopback orchestration API. Dry-run by default; no credential discovery."
+    },
+    {
+      "id": "normalize-exchange",
+      "plugin": "model-gateway",
+      "description": "Normalize external or local model prompts, responses, and optional explicit reasoning summaries into provider-neutral PMCR-O evidence envelopes."
+    }
+  ]
+}

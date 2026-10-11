@@ -1,0 +1,21 @@
+{
+  "apiVersion": "pmcro.dev/v1",
+  "kind": "agent.index",
+  "agent": "model-gateway-agent",
+  "entries": [
+    {
+      "route": "@model-gateway-agent /model-gateway:local-orchestration-bridge",
+      "plugin": "model-gateway",
+      "skill": "local-orchestration-bridge",
+      "description": "Bridge a normalized model response to an explicitly supplied loopback orchestration API. Dry-run by default; no credential discovery.",
+      "path": ".pmcro/plugins/model-gateway/skills/local-orchestration-bridge"
+    },
+    {
+      "route": "@model-gateway-agent /model-gateway:normalize-exchange",
+      "plugin": "model-gateway",
+      "skill": "normalize-exchange",
+      "description": "Normalize external or local model prompts, responses, and optional explicit reasoning summaries into provider-neutral PMCR-O evidence envelopes.",
+      "path": ".pmcro/plugins/model-gateway/skills/normalize-exchange"
+    }
+  ]
+}
